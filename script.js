@@ -4,14 +4,15 @@ const URL =
 fetch(URL)
     .then(res => res.json())
     .then(data => {
-        console.log(data)
-        document.querySelector(".main").innerHTML += `<p class="city">${data.location.name}</p>`
+        console.log( data.forecast.forecastday)
+        document.querySelector(".city").innerHTML = data.location.name
         data.forecast.forecastday.forEach((el) => {
             document.querySelector(".main").innerHTML += `    
                 <div class="Pogoda">
-                    <p class="temprature">${el.day.avgtemp_c} температура</p>
-                    <p class="wind">${el.day}</p>
-                    <p class="cloudy"></p>
+                    <img class="weather-icon" src="${el.day.condition.icon}" />
+                    <p class="temprature">${el.day.avgtemp_c} ° температура</p>
+                    <p class="wind">ШВидкість вітру: ${el.day.maxwind_kph} км/год </p>
+                    <p class="cloudy"> </p>
                 </div>
             `;
         });
