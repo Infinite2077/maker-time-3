@@ -1,21 +1,40 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #83a4d4, #b6fbff);
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .Pogoda {
@@ -25,7 +44,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   max-width: 350px;
-  width: 90%;
+  width: 100%;
   transition: transform 0.3s ease;
 }
 
@@ -33,23 +52,34 @@ body {
   transform: scale(1.03);
 }
 
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 15px auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .Pogoda p {
-  margin: 10px 0;
+  margin: 12px 0;
   font-size: 18px;
   color: #333;
 }
 
 .city {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 26px;
+  color: #2c3e50;
 }
 
 .temprature {
-  font-size: 26px;
+  font-size: 32px;
+  font-weight: bold;
   color: #ff5722;
 }
 
 .wind,
+.humidity,
 .cloudy {
   font-style: italic;
   font-size: 16px;
