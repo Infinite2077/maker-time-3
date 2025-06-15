@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css' integrity='sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==' crossorigin='anonymous'/>
   <!-- Підключення стилів -->
   <link rel="stylesheet" href="style.css" />
 
@@ -13,41 +13,39 @@
 </head>
 
 <body>
-  <select class="select" name="" id="select">
-    <option value="Kyiv">Kyiv</option>
-    <option value="Lviv">Lviv</option>
-    <option value="Odesa">Odesa</option>
-    <option value="Kharkiv">Kharkiv</option>
-    <option value="Dnipro">Dnipro</option>
-    <option value="Zaporizhzhia">Zaporizhzhia</option>
-    <option value="Zhytomyr">Zhytomyr</option>
-    <option value="Poltava">Poltava</option>
-    <option value="Mykolayiv">Mykolayiv</option>
-    <option value="Kherson">Kherson</option>
-    <option value="Lutsk">Lutsk</option>
-    <option value="Vinnytsia">Vinnytsia</option>
-    <option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
-    <option value="Chernivtsi">Chernivtsi</option>
-    <option value="Ternopil">Ternopil</option>
-    <option value="Rivne">Rivne</option>
-    <option value="Sumy">Sumy</option>
-    <option value="Chernihiv">Chernihiv</option>
-    <option value="Kryvyi Rih">Kryvyi Rih</option>
-    <option value="Kropyvnytskyi">Kropyvnytskyi</option>
-    <option value="Khmelnytskyi">Khmelnytskyi</option>
-    <option value="Uzhhorod">Uzhhorod</option>
-    <option value="Cherkasy">Cherkasy</option>
-  </select>
+  <header>
+    <form action="" class="SearchForm">
+
+      <input class="input" type="text" id="search" name="poshuk">
+      <button class="Poshukovik" type="submit"> Пошук </button>
+    </form>
+
+    <select class="select" name="" id="select">
+      <option value="Kyiv">Kyiv</option>
+      <option value="Lviv">Lviv</option>
+      <option value="Odesa">Odesa</option>
+      <option value="Kharkiv">Kharkiv</option>
+      <option value="Dnipro">Dnipro</option>
+      <option value="Zhytomyr">Zhytomyr</option>
+      <option value="Poltava">Poltava</option>
+      <option value="Mykolayiv">Mykolayiv</option>
+      <option value="Kherson">Kherson</option>
+      <option value="Lutsk">Lutsk</option>
+      <option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+      <option value="Chernivtsi">Chernivtsi</option>
+      <option value="Ternopil">Ternopil</option>
+      <option value="Rivne">Rivne</option>
+      <option value="Sumy">Sumy</option>
+      <option value="Chernihiv">Chernihiv</option>
+      <option value="Kryvyi Rih">Kryvyi Rih</option>
+      <option value="Uzhhorod">Uzhhorod</option>
+      <option value="Cherkasy">Cherkasy</option>
+    </select>
+  </header>
 
   <h1 class="city"></h1>
 
-  <main class="main">
-
-
-
-
-
-  </main>
+  <main class="main"></main>
 
   <!-- Підключення FontAwesome для використання текстових іконок -->
   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
