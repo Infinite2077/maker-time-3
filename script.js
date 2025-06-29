@@ -5,7 +5,7 @@ const body = document.querySelector("body")
 const currentWeatherContainer = document.querySelector(".current-weather")
 
 function getWeather(city) {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=c228da7152d04f7f8ea111412250106&q=${city}&days=14&aqi=no&alerts=no`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=c228da7152d04f7f8ea111412250106&q=${city}&days=14&aqi=no&alerts=no`)
         .then(res => res.json())
         .then(data => {
             console.log(data)
